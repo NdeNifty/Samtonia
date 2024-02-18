@@ -71,7 +71,7 @@ const FlightSearchForm: FC<FlightSearchFormProps> = ({}) => {
            ${open ? "" : ""}
             px-4 py-1.5 rounded-md inline-flex items-center font-medium hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 text-xs`}
             >
-              <span>{`${totalGuests || ""} Guests`}</span>
+              <span>{`${totalGuests || ""} Passangers`}</span>
               <ChevronDownIcon
                 className={`${
                   open ? "" : "text-opacity-70"
@@ -215,7 +215,7 @@ const FlightSearchForm: FC<FlightSearchFormProps> = ({}) => {
 
   const renderForm = () => {
     return (
-      <form className="w-full relative mt-8 rounded-[40px] xl:rounded-[49px] rounded-t-2xl xl:rounded-t-3xl shadow-xl dark:shadow-2xl bg-white dark:bg-neutral-800">
+      <form className="w-full relative mt-8 border rounded-[40px] xl:rounded-[49px] rounded-2xl  shadow-lg dark:shadow-2xl bg-white dark:bg-neutral-800">
         {renderRadioBtn()}
         <div className="flex flex-1 rounded-full">
           <LocationInput
