@@ -6,6 +6,7 @@ import { CustomLink } from "@/data/types";
 import React from "react";
 import FooterNav from "./FooterNav";
 
+
 export interface WidgetFooterMenu {
   id: string;
   title: string;
@@ -14,49 +15,16 @@ export interface WidgetFooterMenu {
 
 const widgetMenus: WidgetFooterMenu[] = [
   {
-    id: "5",
-    title: "Getting started",
-    menus: [
-      { href: "#", label: "Installation" },
-      { href: "#", label: "Release Notes" },
-      { href: "#", label: "Upgrade Guide" },
-      { href: "#", label: "Browser Support" },
-      { href: "#", label: "Editor Support" },
-    ],
-  },
-  {
     id: "1",
-    title: "Explore",
+    title: "About Samtonia",
     menus: [
-      { href: "#", label: "Design features" },
-      { href: "#", label: "Prototyping" },
-      { href: "#", label: "Design systems" },
-      { href: "#", label: "Pricing" },
-      { href: "#", label: "Security" },
+      { href: "/privacypolicy", label: "Privacy Policy" },
+      { href: "termsandconditions", label: "Terms and conditions" },
+     
     ],
   },
-  {
-    id: "2",
-    title: "Resources",
-    menus: [
-      { href: "#", label: "Best practices" },
-      { href: "#", label: "Support" },
-      { href: "#", label: "Developers" },
-      { href: "#", label: "Learn design" },
-      { href: "#", label: "Releases" },
-    ],
-  },
-  {
-    id: "4",
-    title: "Community",
-    menus: [
-      { href: "#", label: "Discussion Forums" },
-      { href: "#", label: "Code of Conduct" },
-      { href: "#", label: "Community Resources" },
-      { href: "#", label: "Contributing" },
-      { href: "#", label: "Concurrent Mode" },
-    ],
-  },
+  
+  
 ];
 
 const Footer: React.FC = () => {
@@ -91,7 +59,7 @@ const Footer: React.FC = () => {
         <div className="container grid grid-cols-2 gap-y-10 gap-x-5 sm:gap-x-8 md:grid-cols-4 lg:grid-cols-5 lg:gap-x-10 ">
           <div className="grid grid-cols-4 gap-5 col-span-2 md:col-span-4 lg:md:col-span-1 lg:flex lg:flex-col">
             <div className="col-span-2 md:col-span-1">
-              <Logo />
+              {/* <Logo /> */}
             </div>
             <div className="col-span-2 flex items-center md:col-span-3">
               <SocialsList1 className="flex items-center space-x-3 lg:space-x-0 lg:flex-col lg:space-y-2.5 lg:items-start" />
