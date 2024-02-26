@@ -1,6 +1,6 @@
 {
-  "name": "chisfis-nextjs",
-  "version": "0.2.3",
+  "name": "samtoniatravels",
+  "version": "1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
