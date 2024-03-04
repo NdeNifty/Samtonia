@@ -1,9 +1,10 @@
 module.exports = {
     apps: [{
-      name: 'samtoniatravels', // Use the same name as your PM2 process name
+      name: 'samtoniatravels',
       script: 'npm',
-      args: 'run start', // Assuming your package.json has a "start" script to run Next.js
-      watch: true,
+      args: 'run start', // Assumes your package.json has a "start" script for Next.js
+      watch: ['.'], // Watch all files for development; consider limiting this in production
+      ignore_watch: ['node_modules', '.next'], // Ignore watching node_modules and .next build directory
       env: {
         NODE_ENV: 'development',
       },
