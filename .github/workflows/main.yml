@@ -50,7 +50,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           script: |
-            cd /root/educompanion
+            cd /root/samtonia
             git pull
             yarn install --frozen-lockfile
             yarn build
