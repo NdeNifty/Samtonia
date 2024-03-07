@@ -6,7 +6,7 @@ const TermsAndConditions = () => {
       <h1 className="text-4xl font-semibold text-gray-800 mb-6">Terms and Conditions for Samtonia</h1>
 
       <p className="mb-4 text-gray-600">
-        By using Samtonia's website and services, you agree to comply with and be bound by the following terms and conditions. Please read these terms carefully before using our platform.
+        By using Samtonia &apos s website and services, you agree to comply with and be bound by the following terms and conditions. Please read these terms carefully before using our platform.
       </p>
 
       <h2 className="text-2xl font-semibold text-gray-800 mt-6 mb-4">1. Acceptance of Terms</h2>
