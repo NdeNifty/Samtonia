@@ -1,38 +1,57 @@
-name: Samtonia Deployment
+name: Production Deployment
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    
-    - name: Use Node.js 20.x
-      uses: actions/setup-node@v2
-      with:
-        node-version: 20.x
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Install dependencies
-      run: npm install
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
 
-    - name: Install PM2 globally
-      run: npm install -g pm2
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
 
-    # - name: Run build
-    #   run: npm run build
+      - name: Build Next.js app
+        run: yarn build
 
-    - name: Start application with PM2
-      run: pm2 start ecosystem.config.js --env development
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
 
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Save PM2 process list
-      run: pm2 save
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
 
-    - name: Setup PM2 to restart on reboot
-      run: pm2 startup
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Deploy to server
+        uses: appleboy/ssh-action@v0.1.10
+        with:
+          # host: 143.42.45.16
+          # username: root
+          # key: ${{ secrets.SSH_PRIVATE_KEY }}
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          script: |
+            cd /root/educompanion
+            git pull
+            yarn install --frozen-lockfile
+            yarn build
+            pm2 restart all
