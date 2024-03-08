@@ -204,23 +204,23 @@ export const NAVIGATION_DEMO: NavItemType[] = [
       //
       {
         id: ncNanoId(),
-        href: "/listing-experiences",
+        href: "#",
         name: "Experiences listings",
         type: "dropdown",
         children: [
           {
             id: ncNanoId(),
-            href: "/listing-experiences",
+            href: "#",
             name: "Experiences page",
           },
           {
             id: ncNanoId(),
-            href: "/listing-experiences-map",
+            href: "#",
             name: "Experiences page (map)",
           },
           {
             id: ncNanoId(),
-            href: "/listing-experiences-detail",
+            href: "#",
             name: "Experiences Detail",
           },
         ],
@@ -229,31 +229,31 @@ export const NAVIGATION_DEMO: NavItemType[] = [
       //
       {
         id: ncNanoId(),
-        href: "/listing-car",
+        href: "#",
         name: "Cars listings",
         type: "dropdown",
         children: [
-          { id: ncNanoId(), href: "/listing-car", name: "Cars page" },
-          { id: ncNanoId(), href: "/listing-car-map", name: "Cars page (map)" },
-          { id: ncNanoId(), href: "/listing-car-detail", name: "Car Detail" },
+          { id: ncNanoId(), href: "#", name: "Cars page" },
+          { id: ncNanoId(), href: "#", name: "Cars page (map)" },
+          { id: ncNanoId(), href: "#", name: "Car Detail" },
         ],
       },
 
       //
       {
         id: ncNanoId(),
-        href: "/listing-real-estate",
+        href: "#",
         name: "Real Estate Listings",
         type: "dropdown",
         children: [
           {
             id: ncNanoId(),
-            href: "/listing-real-estate",
+            href: "#",
             name: "Real Estate Listings",
           },
           {
             id: ncNanoId(),
-            href: "/listing-real-estate-map",
+            href: "#",
             name: "Real Estate Maps",
           },
         ],
@@ -261,7 +261,7 @@ export const NAVIGATION_DEMO: NavItemType[] = [
       //
       {
         id: ncNanoId(),
-        href: "/listing-flights",
+        href: "#",
         name: "Flights listings",
       },
     ],
@@ -296,59 +296,59 @@ export const NAVIGATION_DEMO_2: NavItemType[] = [
   //
   {
     id: ncNanoId(),
-    href: "/listing-stay",
+    href: "#",
     name: "Listing pages",
     children: [
-      { id: ncNanoId(), href: "/listing-stay", name: "Stay listings" },
+      { id: ncNanoId(), href: "#", name: "Stay listings" },
       {
         id: ncNanoId(),
-        href: "/listing-stay-map",
+        href: "#",
         name: "Stay listings (map)",
       },
-      { id: ncNanoId(), href: "/listing-stay-detail", name: "Stay detail" },
+      { id: ncNanoId(), href: "#", name: "Stay detail" },
 
       //
       {
         id: ncNanoId(),
-        href: "/listing-experiences",
+        href: "#",
         name: "Experiences listings",
       },
       {
         id: ncNanoId(),
-        href: "/listing-experiences-map",
+        href: "#",
         name: "Experiences (map)",
       },
       {
         id: ncNanoId(),
-        href: "/listing-experiences-detail",
+        href: "#",
         name: "Experiences detail",
       },
     ],
   },
   {
     id: ncNanoId(),
-    href: "/listing-car",
+    href: "#",
     name: "Listing pages",
     children: [
-      { id: ncNanoId(), href: "/listing-car", name: "Cars listings" },
-      { id: ncNanoId(), href: "/listing-car-map", name: "Cars listings (map)" },
-      { id: ncNanoId(), href: "/listing-car-detail", name: "Car detail" },
+      { id: ncNanoId(), href: "#", name: "Cars listings" },
+      { id: ncNanoId(), href: "#", name: "Cars listings (map)" },
+      { id: ncNanoId(), href: "#", name: "Car detail" },
 
       //
       {
         id: ncNanoId(),
-        href: "/listing-real-estate",
+        href: "#",
         name: "Real estate listings",
       },
       {
         id: ncNanoId(),
-        href: "/listing-real-estate-map",
+        href: "#",
         name: "Real estate (map)",
       },
       //
       {
         id: ncNanoId(),
-        href: "/listing-flights",
+        href: "#",
         name: "Flights listings",
       },
     ],
