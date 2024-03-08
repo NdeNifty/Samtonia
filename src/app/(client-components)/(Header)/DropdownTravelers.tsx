@@ -18,26 +18,26 @@ const solutions: SolutionItem[] = [
   {
     name: "Stays",
     description: "Stays rental description ",
-    href: "/listing-stay",
+    href: "#",
     active: true,
     icon: IconOne,
   },
   {
     name: "Real Estate",
     description: "Real Estate description",
-    href: "/listing-real-estate",
+    href: "#",
     icon: IconTwo,
   },
   {
     name: "Cars",
     description: "Car rental description",
-    href: "/listing-car",
+    href: "#",
     icon: IconThree,
   },
   {
     name: "Experiences",
     description: "Tour and experiences",
-    href: "/listing-experiences",
+    href: "#",
     icon: IconFour,
   },
 ];
