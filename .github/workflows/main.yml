@@ -46,9 +46,12 @@ jobs:
           # host: 143.42.45.16
           # username: root
           # key: ${{ secrets.SSH_PRIVATE_KEY }}
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
+          # host: ${{ secrets.HOST }}
+          # username: ${{ secrets.USERNAME }}
+          # password: ${{ secrets.PASSWORD }}
+          host: 157.245.115.51
+          username: root
+          password: 1@Samtonia
           script: |
             cd /root/samtonia
             git pull
