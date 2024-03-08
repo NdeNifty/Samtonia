@@ -54,7 +54,7 @@ jobs:
           password: 1@Samtonia
           script: |
             cd Samtonia
-            git pull origin main
+            git pull 
             yarn install --frozen-lockfile
             yarn build
             pm2 restart all 
