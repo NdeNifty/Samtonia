@@ -53,8 +53,8 @@ jobs:
           username: root
           password: 1@Samtonia
           script: |
-            cd /root/actions-runner/_work/Samtonia
-            git pull
+            cd /Samtonia
+            git pull origin main
             yarn install --frozen-lockfile
             yarn build
-            pm2 restart all
+            pm2 restart all 
