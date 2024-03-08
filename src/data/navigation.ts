@@ -181,23 +181,23 @@ export const NAVIGATION_DEMO: NavItemType[] = [
   },
   {
     id: ncNanoId(),
-    href: "/listing-stay",
+    href: "#",
     name: "Listing Page",
     type: "dropdown",
     children: [
       {
         id: ncNanoId(),
-        href: "/listing-stay",
+        href: "#",
         name: "Stay listings",
         type: "dropdown",
         children: [
-          { id: ncNanoId(), href: "/listing-stay", name: "Stay page" },
+          { id: ncNanoId(), href: "#", name: "Stay page" },
           {
             id: ncNanoId(),
-            href: "/listing-stay-map",
+            href: "#-map",
             name: "Stay page (map)",
           },
-          { id: ncNanoId(), href: "/listing-stay-detail", name: "Stay Detail" },
+          { id: ncNanoId(), href: "#-detail", name: "Stay Detail" },
         ],
       },
 
