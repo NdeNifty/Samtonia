@@ -55,8 +55,6 @@ jobs:
           script: |
             cd Samtonia
             git pull 
-            npm install --global yarn
-            npm install pm2 -g
-            yarn install --frozen-lockfile
-            yarn build
-            pm2 restart all 
+            /root/.nvm/versions/node/v20.11.1/bin/yarn install --frozen-lockfile
+            /root/.nvm/versions/node/v20.11.1/bin/yarn build
+            /root/.nvm/versions/node/v20.11.1/bin/pm2 restart all 
