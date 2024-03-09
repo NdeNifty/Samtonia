@@ -66,5 +66,5 @@ jobs:
             /root/.nvm/versions/node/v20.11.1/bin/yarn build
             /root/.nvm/versions/node/v20.11.1/bin/pm2 stop all
             pwd
-            cd Samtonia/.github
+            cd .github
             /root/.nvm/versions/node/v20.11.1/bin/pm2 start ecosystem.config.js
