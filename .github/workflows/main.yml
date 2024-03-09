@@ -65,5 +65,6 @@ jobs:
             /root/.nvm/versions/node/v20.11.1/bin/yarn install --frozen-lockfile
             /root/.nvm/versions/node/v20.11.1/bin/yarn build
             /root/.nvm/versions/node/v20.11.1/bin/pm2 stop all
-            cd /Samtonia/.github
+            pwd
+            cd Samtonia/.github
             /root/.nvm/versions/node/v20.11.1/bin/pm2 start ecosystem.config.js
