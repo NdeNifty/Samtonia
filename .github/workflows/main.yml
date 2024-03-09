@@ -64,4 +64,5 @@ jobs:
             git pull 
             /root/.nvm/versions/node/v20.11.1/bin/yarn install --frozen-lockfile
             /root/.nvm/versions/node/v20.11.1/bin/yarn build
-            /root/.nvm/versions/node/v20.11.1/bin/pm2 restart 0 
+            /root/.nvm/versions/node/v20.11.1/bin/pm2 stop all
+            /root/.nvm/versions/node/v20.11.1/bin/pm2 ecosystem.config.js
