@@ -1,6 +1,6 @@
 module.exports = {
     apps : [{
-      name   : "next-app",
+      name   : "SamtoniaApp",
       script : "npm",
       args   : "run start"
     }]
